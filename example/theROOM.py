@@ -96,7 +96,7 @@ while True:
             #free to do other stuff while its wantok displays the client requests
             DETACHED_PROCESS = sps.CREATE_NEW_CONSOLE
             proc = sps.Popen([sys.executable,oriDir+"//QuickPYSER.py","-h",str(host),"-p",str(port),"-d",oriDir+'\\theRoom',
-                              '-s','yes','-l',oriDir,'-i','\\cgi-bin\\home.py'],creationflags=DETACHED_PROCESS)
+                              '-s','yes','-l',oriDir],creationflags=DETACHED_PROCESS)
             #Sets the server state so we will all be aware that the server is already running
             serverState = 1
         elif serverState == 1:
